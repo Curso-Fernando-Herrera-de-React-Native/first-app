@@ -28,15 +28,11 @@ export const CounterScreen = () => {
       }}>
         {counter}
       </Text>
-
-      <View style={{
-        flexDirection: 'row',
-        width: '100%',
-        justifyContent: 'space-around',
-        top: 200
-      }}>
         
-      <TouchableOpacity onPress={ () => setCounter( lastCount => lastCount - 1) }>
+      <TouchableOpacity
+        onPress={ () => setCounter( lastCount => lastCount - 1) }
+        style={ styles.floatLeft }
+      >
         <View style={styles.button}>
           <Text>
             -1
@@ -44,7 +40,10 @@ export const CounterScreen = () => {
         </View>
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={ () => setCounter( lastCount => lastCount + 1) }>
+      <TouchableOpacity
+        onPress={ () => setCounter( lastCount => lastCount + 1) }
+        style={ styles.floatRigth }  
+      >
         <View style={styles.button}>
           <Text>
             +1
@@ -52,6 +51,6 @@ export const CounterScreen = () => {
         </View>
       </TouchableOpacity>
       </View>
-    </View>
+    
   )
 }
