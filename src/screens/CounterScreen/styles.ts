@@ -1,27 +1,22 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-  button: {
-    justifyContent: 'center',
+  screen: {
+    flex: 1,
     alignItems: 'center',
-    backgroundColor: '#ffffff',
-    color: '#161616',
-    fontSize: 40,
-    borderRadius: 50,
-    width: 60,
-    height: 60,
-    shadowOffset:{  width: 20,  height: 20,  },
-    shadowColor: '#cccccc',
-    borderColor: '#cccccc',
+    justifyContent: 'center',
+    backgroundColor: '#f0f0f0'
   },
-  floatLeft: {
-    position: 'absolute',
-    left: 40,
-    bottom: 40
+
+  title: {
+    fontSize: 28,
+    textAlign: 'center',
+    color: '#161616'
   },
-  floatRigth: {
-    position: 'absolute',
-    right: 40,
-    bottom: 40
+
+  number: {
+    fontSize: 60,
+    textAlign: 'center',
+    color: '#161616'
   }
 })
